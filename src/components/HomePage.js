@@ -1,9 +1,15 @@
-import React, {Fragment} from 'react'
+import React, { Component } from 'react';
 
-const HomePage = () => (
-    <Fragment>
-        <h1>Hello world!</h1>
-    </ Fragment>
-)
 
-export default HomePage
+
+
+class HomePage extends Component {
+
+    render () {
+        return (
+            <h1>Hello World</h1>
+        )
+    }
+}
+
+export default HomePage;
