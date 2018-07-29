@@ -12,7 +12,9 @@ const Welcome = styled.h4`
   margin-bottom: 20px;
 `
 const Bubble = styled.div`
-    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white!important;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     text-align: center;
@@ -27,6 +29,10 @@ const Chat = Bubble.extend`
     margin-top: 17vh;
     line-height: 40vw;  
 `
+const navlinkstyle = {
+    color: 'white',
+    textDecoration: 'none'
+}
 const Survey = Bubble.extend`
     width: 30vw;
     height: 30vw;
@@ -48,4 +54,4 @@ const Emoji = Bubble.extend`
     line-height: 25vw;   
 `
 
-export { Home, Img, Welcome, Chat, Survey, Journal, Emoji}
+export { Home, Img, Welcome, Chat, navlinkstyle, Survey, Journal, Emoji}

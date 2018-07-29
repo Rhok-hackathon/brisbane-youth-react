@@ -8,6 +8,7 @@ body {
     background-color: #573E54;
     text-align:center;
     color:white;
+    weight: 400;
     background-image: url(${bgimg});
     background-size: cover;
 }
