@@ -16,7 +16,6 @@ import Register from '../components/Register.js'
 const AppRouter = () => (
             <BrowserRouter> 
                 <Fragment>
-                    <Navbar />
                     <Switch>
                         <Route path="/" component={HomePage} exact={true} />
                         <Route path="/login" component={Login} exact={true}/>                        

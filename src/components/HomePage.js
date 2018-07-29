@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
-
 import logo from '../images/bys-logo-short.png'
-import { Img, Welcome, Bubble1, Bubble2, Bubble3, Bubble4 } from '../styles/components/HomePage.styles';
+import { Img, Welcome, Chat, navlinkstyle, Survey, Journal, Emoji } from '../styles/components/HomePage.styles';
+import { NavLink } from 'react-router-dom';
 
 class HomePage extends Component {
 
@@ -9,11 +9,13 @@ render(){
     return(
         <Fragment>
         <Img src={logo} alt="Brisbane Youth Services logo"></Img>
-        <Welcome>Welcome John</ Welcome>
-            <Bubble2>Survey</Bubble2>
-            <Bubble1>Chat</Bubble1>
-            <Bubble3>Journal</Bubble3>
-            <Bubble4>Survey</Bubble4>
+        <Welcome>Welcome Nick</ Welcome>
+            <Survey>Survey</Survey>
+            <Chat>
+                <NavLink style={navlinkstyle} exact to="/chat">Chat</NavLink>
+            </Chat>
+            <Journal>Journal</Journal>
+            <Emoji>Emojis</Emoji>
         </ Fragment>    
         )}
     }
