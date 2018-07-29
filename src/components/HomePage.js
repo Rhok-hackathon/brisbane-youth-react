@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
+
 import logo from '../images/bys-logo-short.png'
 import { Img, Welcome, Chat, Survey, Journal, Emoji } from '../styles/components/HomePage.styles';
-
 
 class HomePage extends Component {
 
