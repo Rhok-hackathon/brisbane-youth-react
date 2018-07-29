@@ -11,4 +11,4 @@ const api = axios.create({
 //   api.defaults.headers.common['Authorization'] = `Bearer ${token}`
 // }
 // took out setJwt
-export { api}
+export { api }
