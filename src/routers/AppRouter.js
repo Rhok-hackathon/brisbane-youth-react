@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import {Switch, BrowserRouter, Route} from 'react-router-dom'
 import HomePage from '../components/HomePage.js'
 
+
 import Navbar from '../components/Navbar.js'
 import Profile from '../components/Profile.js'
 import Journal from '../components/Journal.js'
@@ -10,11 +11,6 @@ import Emoji from '../components/Emoji.js'
 import Login from '../components/Login.js'
 import Register from '../components/Register.js'
 
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { f0a1 } from '@fortawesome/free-solid-svg-icons'
-
-// library.add(f0a1)
 
 const AppRouter = () => (
             <BrowserRouter> 
@@ -22,11 +18,11 @@ const AppRouter = () => (
                     <Navbar />
                     <Switch>
                         <Route path="/" component={HomePage} exact={true} />
+                        <Route path="/login" component={Login} exact={true}/>                        
                         <Route path="/profile" component={Profile}  exact={true}/>
                         <Route path="/journal" component={Journal}  exact={true}/>
                         <Route path="/chat" component={Chat}  exact={true}/>
                         <Route path="/emoji" component={Emoji} exact={true}/>
-                        <Route path="/login" component={Login} exact={true}/>
                         <Route path="/register" component={Register} exact={true}/>
                         */}
                     </ Switch>
