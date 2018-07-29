@@ -9,6 +9,7 @@ body {
     text-align:center;
     color:white;
     background-image: url(${bgimg});
+    background-size: cover;
 }
 html {
     position: relative;
