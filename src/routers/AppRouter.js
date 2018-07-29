@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import {Switch, BrowserRouter, Route} from 'react-router-dom'
 import HomePage from '../components/HomePage.js'
+import injectGlobal from '../styles/components/Global.styles'
 
 import Navbar from '../components/Navbar.js'
 import Profile from '../components/Profile.js'
