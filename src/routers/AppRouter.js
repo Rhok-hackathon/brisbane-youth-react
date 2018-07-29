@@ -10,6 +10,12 @@ import Emoji from '../components/Emoji.js'
 import Login from '../components/Login.js'
 import Register from '../components/Register.js'
 
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { f0a1 } from '@fortawesome/free-solid-svg-icons'
+
+// library.add(f0a1)
+
 const AppRouter = () => (
             <BrowserRouter> 
                 <Fragment>
