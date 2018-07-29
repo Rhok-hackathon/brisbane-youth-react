@@ -29,9 +29,15 @@ class Chat extends Component {
     }
 
     componentDidMount () {
+        let username
+        if (localStorage.getItem('username')) {
+            username = localStorage.getItem('username')
+        } else {
+            username = ''
+        }
         const chatManager = new Chatkit.ChatManager({
                 instanceLocator: instanceLocator,
-                userId: localStorage.getItem('username'),
+                userId: username,
                 tokenProvider: new Chatkit.TokenProvider({
                     url: tokenUrl
             })
