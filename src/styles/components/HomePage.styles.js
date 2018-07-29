@@ -10,6 +10,10 @@ const Welcome = styled.h4`
   ${setTextProps('30px','300','yellow')}
   margin-bottom: 20px;
 `
+const Login = styled.h4`
+${setTextProps('30px','300','yellow')}
+margin-bottom: 20px;
+`
 
 const Bubble = styled.div`
     font-size: 22px;
@@ -50,4 +54,4 @@ const Bubble4 = Bubble.extend`
 //     height: 50vh;
 //     width: 50vw;
 // `
-export { Home, Img, Welcome, Bubble1, Bubble2, Bubble3, Bubble4}
+export { Home, Img, Welcome, Login, Bubble1, Bubble2, Bubble3, Bubble4}
