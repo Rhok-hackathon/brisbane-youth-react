@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Square from './Square'
 import Pin from './Pin'
 import '../../styles/Board.css'
-import { Img, Login } from '../../styles/components/HomePage.styles';
+import { Img } from '../../styles/components/HomePage.styles';
 import logo from '../../images/bys-logo-short.png'
 
 // Where the buttons are displayed.
@@ -70,7 +70,7 @@ handleUsername = event => {
   }
 
   render() {
-    const status = <Login>Please enter you pin below:</Login>
+    //const status = <Login>Please enter you pin below:</Login>
 
     return (
         <div>
@@ -83,7 +83,7 @@ handleUsername = event => {
             </div>
             <br />
             <div>
-                <div className="status">{status}</div>
+                {/*<div className="status">{status}</div>*/}
                 <div className="status">{this.displayPIN()}</div>                
                 <div className="board-row">
                 {this.renderSquare(1)}
