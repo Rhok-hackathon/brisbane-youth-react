@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Square from './Square'
 import Board from './Board'
 
-
 class Pin extends Component {
   render() {
     return (

@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import Square from './Square'
 import Pin from './Pin'
 import '../../styles/Board.css'
+import { Img, Login } from '../../styles/components/HomePage.styles';
+import logo from '../../images/bys-logo-short.png'
 
 // Where the buttons are displayed.
-
 
 class Board extends Component {
   // Details are an empty array which add numbers when a button is clicked.
@@ -69,10 +70,11 @@ handleUsername = event => {
   }
 
   render() {
-    const status = 'Please enter you pin below:';
+    const status = <Login>Please enter you pin below:</Login>
 
     return (
         <div>
+            <Img src={logo} alt="Brisbane Youth Services logo"></Img>
             <form onSubmit={this.submitPin}>
             <div>
                 <label>Username:
@@ -82,6 +84,7 @@ handleUsername = event => {
             <br />
             <div>
                 <div className="status">{status}</div>
+                <div className="status">{this.displayPIN()}</div>                
                 <div className="board-row">
                 {this.renderSquare(1)}
                 {this.renderSquare(2)}
@@ -97,10 +100,11 @@ handleUsername = event => {
                 {this.renderSquare(8)}
                 {this.renderSquare(9)}
                 </div>
-                <div className="board-row">
+                <div className="board-row last-row">
+                <button className="placeholder"></button>
                 {this.renderSquare(0)}
+                <button className="placeholder"></button>
                 </div>
-                <div className="status">{this.displayPIN()}</div>
                 <button type="submit" onClick={this.submitPin}>Submit</button>
                 <button onClick={this.removeNumber}>Remove Number</button>
             </div>
