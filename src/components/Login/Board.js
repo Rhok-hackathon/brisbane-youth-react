@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Square from './Square'
 import Pin from './Pin'
-import '../../styles/Board.css'
+// import '../../styles/Board.css'
 
 // Where the buttons are displayed.
 
