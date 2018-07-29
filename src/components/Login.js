@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import Pin from './Login/Pin'
+
+
+
 
 class Login extends Component {
+
     render () {
         return (
-            <h1>Hello World</h1>
+            <Pin />
+
         )
     }
 }
